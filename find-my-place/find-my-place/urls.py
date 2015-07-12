@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^about', 'find-my-place.views.about'),
     url(r'^contact', 'find-my-place.views.contact'),
     url(r'^places', 'find-my-place.views.places'),
+    url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
 ] 
