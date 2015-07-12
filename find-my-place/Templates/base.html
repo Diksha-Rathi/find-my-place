@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE HTML>
+<HTML lang ="en-us">
+
+<head>
+	<!-- Basic Page needs -->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="utf-8"> 
+		<title>Find-my-place</title>
+		<meta name="description" content="Browse your way to the nearest place">
+		<meta name="keywords" content="HTML, CSS, JavaScricpt">
+		<meta name='revised' content='Friday, June 22, 2015, 1:32 pm'>
+		<meta name="author" content="Diksha">
+	
+	<!-- Mobile Specific Metas-->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta content="telephone=no" name="format-detection">
+
+	<!-- Latest compiled and minified CSS -->
+	<link href="{% static "assets/css/bootstrap.css"%}" rel="stylesheet" type="text/css"/>  
+  
+	<!-- jQuery library--->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript-->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Navigation-->
+	<nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+				<span class="navbar-brand"><img src="{% static "assets/images/logo.png"%}" alt="logo"></img></span>
+                <a class="navbar-brand" href="#page-top">Find-my-place</a>
+            </div>
+            <div>
+               <ul class="nav navbar-nav navbar-right">
+                   <li><a href="search.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+              <!--<ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                   <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>-->
+            </div>
+          </div>
+	</nav>
+	<!-- End Navigation --->
+	{% block content %} {% endblock %}
+	<footer class="text-center">
+		<p>Contact information: <a href="mailto:find-my-place@gmail.com"><b><i>
+		findmyplacehelp@gmail.com</i></b></a></p>
+		<p>&copy; All rights reserved.</p>
+	</footer>
+	
+</body>
+
+</html>

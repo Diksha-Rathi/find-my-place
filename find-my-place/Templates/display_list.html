@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+	<div class="jumbotron">
+		<div class="row"><!--start row-->
+			<!--column 1 left empty-->
+			<div class="col-sm-2">&nbsp;</div>
+			<!--end column-->
+			
+			{% ifequal keyword 'fire station' %}
+			<div class="col-sm-4"><!--column 2-->
+				<br><br><h2>Here are the nearest<br>Fire Stations!</h2>
+			</div><!--end column-->
+
+			<div class="col-sm-4"><!--column 3-->
+				<img src="{% static "assets/images/image1.png"%}" alt="fire-station" width="200" height="200"/>
+			</div><!--end column-->
+			{% endifequal %}
+
+			{% ifequal keyword 'hospital' %}
+			<div class="col-sm-4"><!--column 2-->
+				<br><br><h2>Here are the nearest<br>Hospitals!</h2>
+			</div><!--end column-->
+
+			<div class="col-sm-4"><!--column 3-->
+				<img src="{% static "assets/images/image2.png"%}" alt="hospital" width="200" height="200"/>
+			</div><!--end column-->
+			{% endifequal %}
+
+			{% ifequal keyword 'hotel' %}
+			<div class="col-sm-4"><!--column 2-->
+				<br><br><h2>Here are the nearest<br>Hotels!</h2>
+			</div><!--end column-->
+
+			<div class="col-sm-4"><!--column 3-->
+				<img src="{% static "assets/images/image3.png"%}" alt="hotel" width="200" height="200"/>
+			</div><!--end column-->
+			{% endifequal %}
+	
+			{% ifequal keyword 'metro station' %}
+			<div class="col-sm-4"><!--column 2-->
+				<br><br><h2>Here are the nearest<br>Metro Stations!</h2>
+			</div><!--end column-->
+
+			<div class="col-sm-4"><!--column 3-->
+				<img src="{% static "assets/images/image4.png"%}" alt="metro-station" width="200" height="200"/>
+			</div><!--end column-->
+			{% endifequal %}	
+	
+			{% ifequal keyword 'park' %}
+			<div class="col-sm-4"><!--column 2-->
+				<br><br><h2>Here are the nearest<br>Parks!</h2>
+			</div><!--end column-->
+
+			<div class="col-sm-4"><!--column 3-->
+				<img src="{% static "assets/images/image5.png"%}" alt="park" width="200" height="200"/>
+			</div><!--end column-->
+			{% endifequal %}
+	
+			{% ifequal keyword 'police station' %}
+			<div class="col-sm-4"><!--column 2-->
+				<br><br><h2>Here are the nearest<br>Police Stations!</h2>
+			</div><!--end column-->
+
+			<div class="col-sm-4"><!--column 3-->
+				<img src="{% static "assets/images/image6.png"%}" alt="police-station" width="200" height="200"/>
+			</div><!--end column-->
+			{% endifequal %}
+	
+			{% ifequal keyword 'eateries' %}
+			<div class="col-sm-4"><!--column 2-->
+				<br><br><h2>Here are the nearest<br>Restaurants!</h2>
+			</div><!--end column-->
+
+			<div class="col-sm-4"><!--column 3-->
+				<img src="{% static "assets/images/image7.png"%}" alt="restaurant" width="200" height="200"/>
+			</div><!--end column-->
+			{% endifequal %}
+	
+			{% ifequal keyword 'shopping mall' %}
+			<div class="col-sm-4"><!--column 2-->
+				<br><br><h2>Here are the nearest<br>Shopping Malls!</h2>
+			</div><!--end column-->
+
+			<div class="col-sm-4"><!--column 3-->
+				<img src="{% static "assets/images/image8.png"%}" alt="shopping-mall" width="200" height="200"/>
+			</div><!--end column-->
+			{% endifequal %}
+
+			<!--column 4 left empty-->
+			<div class="col-sm-2">&nbsp;</div>
+			<!--end column-->
+		</div><!--end row-->
+		<br>
+		<div class="row"><!--start row2-->
+			<div class="col-sm-2">&nbsp;</div>
+			<div class="col-sm-8"><hr><p><b>Note:</b>&nbsp;The displayed results are based on their importance. Ranking will favor prominent places within the specified area. Prominence can be affected by a place's ranking in Google's index, global popularity, and other factors.</p><hr></div>
+			<div class="col-sm-2">&nbsp;</div>
+		</div><!--end row-->
+	</div><!--end jumbotron-->	 
+	<br>	
+	{% for perfect_place, flag in mylist.items %}
+	<div class="container-fluid">
+		<div class="jumbotron3">
+		{{ perfect_place }}
+		</div>
+		<ul type="square">
+        		<li><b> Address: </b> {{ flag.0 }}</li>
+        		<li><b> Local Phone Number: </b> {{ flag.1 }} </li>
+        		<li><b> International Phone Number: </b>{{ flag.2 }}</li>       
+      		</ul>
+		<br><br><hr><br>
+	</div>
+	{% endfor %}
+{% endblock %}
