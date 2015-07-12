@@ -12,7 +12,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "find_my_place.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "find-my-place.settings")
 
 application = get_wsgi_application()
 
