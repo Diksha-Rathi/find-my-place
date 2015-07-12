@@ -24,10 +24,6 @@ SECRET_KEY = 'kq3pxvgv8ojqg(&wud19xrb@aayc=-l!y3+qkxg7u%6mqvve5!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# Allow all host headers
-ALLOWED_HOSTS = ['*']
-
-
 # Application definition
 
 INSTALLED_APPS = (
@@ -94,6 +90,28 @@ USE_L10N = True
 
 USE_TZ = True
 
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.8/howto/static-files/
+
+
+MEDIA_URL = '/media/'
+
+STATIC_ROOT = 'staticfiles'
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (os.path.join(BASE_DIR,'../static'),)
+#STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR), "static"),)
+TEMPLATE_DIRS = ( os.path.join(BASE_DIR, '../templates'),)
+#Additional locations for static fiels
+"""STATICFILES_DIRS =  (
+    ('assets', '/home/diksha/djcode/find-my-place/static'),
+    #always put absolute path and forward slashes
+    )
+
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]"""
+
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
 DATABASES['default'] =  dj_database_url.config()
@@ -101,23 +119,44 @@ DATABASES['default'] =  dj_database_url.config()
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.8/howto/static-files/
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
 
 # Static asset configuration
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, '../static'),
+)
 
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
+
+
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
+#     'django.template.loaders.eggs.Loader',
+)
+
+
+# Parse database configuration from $DATABASE_URL
+DATABASES['default'] =  dj_database_url.config()
+
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.7/howto/static-files/
+
+#BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 STATIC_ROOT = 'staticfiles'
-
-#Additional locations for static fiels
-STATICFILES_DIRS =  (
-    ('assets', '/home/diksha/git/find-my-place/find-my-place/static'),
-      os.path.join(BASE_DIR, 'static'),
-    #always put absolute path and forward slashes
-    )
-
-
-TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+STATIC_URL = '/static/'
