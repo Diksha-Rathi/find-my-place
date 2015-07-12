@@ -4,5 +4,7 @@ Django==1.8.3
 django-toolbelt==0.0.1
 gunicorn==19.3.0
 psycopg2==2.6.1
+python-google-places==1.0.0
 static3==0.6.1
 wheel==0.24.0
+whitenoise==2.0.2
