@@ -6697,18 +6697,6 @@ button.close {
     display: none !important;
   }
 }
-footer{
-	color: #FFF;
-	background-color: #14293D;
-	height: 120px;
-	padding-top: 30px;
-}
-footer a{
-	color:#99CCFF;
-}
-footer a:hover{
-	color: #FFFFA3;
-}
 .jumbotron2 {
   padding-bottom: 15px;
   margin-bottom: 15px;
@@ -6784,3 +6772,82 @@ footer a:hover{
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.footer-distributed{
+  color:#ffffff;
+  background-color:#14293D;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 80px;
+}
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+/* Footer left */
+.footer-distributed .footer-left{
+  width: 40%;
+}
+/* Footer links */
+.footer-distributed .footer-links{
+  margin: 20px 0 12px;
+  padding: 0;
+}
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+/* Footer Center */
+.footer-distributed .footer-center{
+  width: 35%;
+}
+.footer-distributed .footer-center p{
+  display: inline-block;
+  vertical-align: middle;
+  margin:0;
+}
+.footer-distributed .footer-center p a{
+  color:  #9CDAF1;
+}
+.footer-distributed .footer-center p a:hover{
+  color:  #FFFFA3;
+}
+/* Footer Right */
+.footer-distributed .footer-right{
+  width: 20%;
+}
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 880px) {
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
