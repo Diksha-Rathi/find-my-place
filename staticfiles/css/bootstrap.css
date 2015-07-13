@@ -6780,9 +6780,9 @@ button.close {
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: bold 16px sans-serif;
+  font: 16px sans-serif;
   padding: 55px 50px;
-  margin-top: 80px;
+  margin-top: -30px;
 }
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
@@ -6834,7 +6834,6 @@ button.close {
   display: block;
   color:  #ffffff;
   font-size: 14px;
-  font-weight: bold;
   margin-bottom: 20px;
 }
 /* If you don't want the footer to be responsive, remove these media queries */
