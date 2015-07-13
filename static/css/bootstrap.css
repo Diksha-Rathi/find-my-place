@@ -5052,6 +5052,12 @@ a.badge:focus {
 .col-sm-8 > hr {
   border-top: 1px solid #14293D;
 }
+.col-sm-6 > a{
+  color:#CD0000;
+}
+.col-sm-6 > a:hover{
+  color:#09BFDF;
+}
 .thumbnail {
   display: block;
   padding: 4px;

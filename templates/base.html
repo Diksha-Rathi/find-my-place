@@ -51,10 +51,24 @@
 	</nav>
 	<!-- End Navigation --->
 	{% block content %} {% endblock %}
-	<footer class="text-center">
-		<p>Contact information: <a href="mailto:find-my-place@gmail.com"><b><i>
-		findmyplacehelp@gmail.com</i></b></a></p>
-		<p>&copy; All rights reserved.</p>
+
+	<footer>
+		<div class="row"><!--start row-->
+			<div class="col-sm-3">&nbsp;</div>
+
+			<div class="col-sm-6" align="center">
+				<p>Contact information: <a href="mailto:find-my-place@gmail.com"><b><i>
+					findmyplacehelp@gmail.com</i></b></a></p>
+				<p>&copy; All rights reserved.</p>
+			</div>
+
+			<div class="col-sm-3"><p>Fork the code 
+				<a href="https://github.com/tapasweni-pathak/Help-The-Needy" target= "_blank">
+			 	<img src="{% static "images/footer-git.png"%}" alt="git-icon" height=80px width=80px >
+				</a></p>
+			</div>
+
+		</div>
 	</footer>
 	
 </body>
