@@ -6,6 +6,8 @@ __pycache__/
 venv
 *.pyc
 staticfiles
+*.py~
+*.html~
 
 # Distribution / packaging
 .Python
