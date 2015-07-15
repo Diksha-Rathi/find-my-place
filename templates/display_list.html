@@ -7,9 +7,17 @@
 			<div class="col-sm-2">&nbsp;</div>
 			<!--end column-->
 			
+			<div class="row"><!--start row2-->
+			<div class="col-sm-2">&nbsp;</div>
+			<div class="col-sm-8"><hr><p><b>Note:</b>&nbsp;The displayed results are based on their importance. Ranking will favor prominent places within the specified area. Prominence can be affected by a place's ranking in Google's index, global popularity, and other factors.</p><hr></div>
+			<div class="col-sm-2">&nbsp;</div>
+		</div><!--end row-->
+			
+			<br>
+			
 			{% ifequal keyword 'fire station' %}
 			<div class="col-sm-4"><!--column 2-->
-				<br><br><h2>Here are the nearest<br>Fire Stations!</h2>
+				<br><br><h2>Below are the nearest<br>Fire Stations!</h2>
 			</div><!--end column-->
 
 			<div class="col-sm-4"><!--column 3-->
@@ -92,11 +100,6 @@
 			<!--end column-->
 		</div><!--end row-->
 		<br>
-		<div class="row"><!--start row2-->
-			<div class="col-sm-2">&nbsp;</div>
-			<div class="col-sm-8"><hr><p><b>Note:</b>&nbsp;The displayed results are based on their importance. Ranking will favor prominent places within the specified area. Prominence can be affected by a place's ranking in Google's index, global popularity, and other factors.</p><hr></div>
-			<div class="col-sm-2">&nbsp;</div>
-		</div><!--end row-->
 	</div><!--end jumbotron-->	 
 	<br>	
 	{% for perfect_place, flag in mylist.items %}

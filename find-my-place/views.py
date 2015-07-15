@@ -5,7 +5,7 @@ from googleplaces import GooglePlaces, types, lang
 from django.core.mail import send_mail
 from django.http import HttpResponseRedirect
 
-YOUR_API_KEY = 'AIzaSyD3JqMSrCskCzqmhGmyxyP0Fd1MSoSGJn4'
+YOUR_API_KEY = 'AI*************************4'
 
 google_places = GooglePlaces(YOUR_API_KEY)
 
@@ -25,7 +25,7 @@ def contact(request):
 	             errors.append('Enter a subject.')
        if not request.POST.get('message',''):
 	             errors.append('Enter a message.')
-       if request.post.get('email') and '@' not in request.POST['email']:
+       if request.POST.get('email') and '@' not in request.POST['email']:
 	         errors.append('Enter a valid e-mail address.')
        if not errors:
 	             send_mail(
