@@ -25,7 +25,7 @@ def contact(request):
 	             errors.append('Enter a subject.')
        if not request.POST.get('message',''):
 	             errors.append('Enter a message.')
-       if request.post.get('email') and '@' not in request.POST['email']:
+       if request.POST.get('email') and '@' not in request.POST['email']:
 	         errors.append('Enter a valid e-mail address.')
        if not errors:
 	             send_mail(
