@@ -61,7 +61,7 @@ $ pip install -r /path/to/requirements.txt
 
 ```sh
 $ cd find-my-place/find-my-place
-$ python manage.py
+$ python manage.py runserver
 ```
 
 ## Todo's
