@@ -90,5 +90,5 @@ MIT
 
 I started this project during my 6- weeks training with HCL Infotect Ltd, Noida between June- July 2015.
 
-[click here]:http://http://find-my-perfect-place.herokuapp.com/
+[click here]:http://find-my-perfect-place.herokuapp.com/
 [help-the-needy]: http://help-the-needy.herokuapp.com/
