@@ -75,7 +75,7 @@ $ python manage.py
 * Suggest new features.
 * Fix bugs.
 
-## Project Mentors
+### Project Mentors
 
 * Pankaj Kumar Choudhary- My mentor at HCL Infotech Ltd, Noida.
 * Tapasweni Pathak
