@@ -36,15 +36,23 @@ $ pip install -r /path/to/requirements.txt
 
 * Generate Google API key.
   1. Visit https://developers.google.com/console and log in with a Google Account.
+
   2. A new project with the name API Project is created for you. Use it or create a new project.
+
   3. Click <b>Enable Google APIs for use in your apps</b>.
+  
   4. Browse for the following APIs under Google Maps APIs section, and set its status to "On".
     * Google Places API Web Service
     * Google Maps Geolocation API 
+    
   5. Once you've enabled the APIs, click <b>Credentials</b> from the left navigation of the Developer Console.
+  
   6. In the "Public API access", click <b>Create new Key</b>.
+  
   7. Choose <b>Server Key</b>.
+  
   8. If you'd like to restrict requests to a specific IP address, do so now.
+  
   9. Click <b>Create</b>.
   
   Keep your key secret.
