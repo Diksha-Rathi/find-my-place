@@ -21,7 +21,7 @@ The following details are presented for all the listed places matching the query
 
 The search results include places within a radius of 10 kilometers sorted in the order of their importance. Ranking will favor prominent places within the specified area. Prominence can be affected by a place's ranking in Google's index, global popularity, and other factors.
 
-The web application is currently live on heroku. 
+The web application is currently live on heroku. [Click here].
 
 ## Setup Instructions
 
@@ -64,7 +64,7 @@ $ cd find-my-place/find-my-place
 $ python manage.py
 ```
 
-## Todo
+## Todo's
 
 * Fix the Contact Us section.
 * Login system to allow users to save search results.
@@ -75,10 +75,10 @@ $ python manage.py
 * Suggest new features.
 * Fix bugs.
 
-### Project Mentors
+License
+----
 
-* Pankaj Kumar Choudhary- My mentor at HCL Infotech Ltd, Noida.
-* Tapasweni Pathak
+MIT
 
 #### Thanks for creating the following:
 
@@ -86,5 +86,9 @@ $ python manage.py
 * Bootstrap
 * Google Places API
 * Python Google Places
+* [Help-the-needy]
 
 I started this project during my 6- weeks training with HCL Infotect Ltd, Noida between June- July 2015.
+
+[click here]:http://http://find-my-perfect-place.herokuapp.com/
+[help-the-needy]: http://help-the-needy.herokuapp.com/
