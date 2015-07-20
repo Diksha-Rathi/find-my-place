@@ -70,7 +70,7 @@ $ python manage.py runserver
 
 ## Wish to contribute?
 
-* Send patches for above mentioned todos.
+* Send patches for above mentioned todo.
 * Suggest new features.
 * Fix bugs.
 
