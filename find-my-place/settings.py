@@ -15,9 +15,6 @@ import dj_database_url
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'kq3pxvgv8ojqg(&wud19xrb@aayc=-l!y3+qkxg7u%6mqvve5!'
 
@@ -64,9 +61,6 @@ DATABASES = {
     }
 }
 
-# Internationalization
-# https://docs.djangoproject.com/en/1.6/topics/i18n/
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'GMT'
@@ -85,7 +79,7 @@ DATABASES['default'] =  dj_database_url.config()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.6/howto/static-files/
+
 STATIC_ROOT = 'staticfiles'
 
 STATIC_URL = '/static/'
@@ -104,3 +98,13 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 )
+
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'findmyplacehelp@gmail.com'
+SERVER_EMAIL = 'findmyplacehelp@gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'findmyplacehelp@gmail.com'
+EMAIL_HOST_PASSWORD = 'physics2'
+EMAIL_PORT = 587

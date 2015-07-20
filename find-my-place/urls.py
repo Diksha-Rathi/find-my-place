@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^search', 'find-my-place.views.home'),
     url(r'^about', 'find-my-place.views.about'),
     url(r'^contact', 'find-my-place.views.contact'),
+    url(r'^thanks', 'find-my-place.views.thanks'),
     url(r'^places', 'find-my-place.views.places'),
 ] 

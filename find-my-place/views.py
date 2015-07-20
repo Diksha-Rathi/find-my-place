@@ -25,8 +25,6 @@ def contact(request):
 	             errors.append('Enter a subject.')
        if not request.POST.get('message',''):
 	             errors.append('Enter a message.')
-       if request.post.get('email') and '@' not in request.POST['email']:
-	         errors.append('Enter a valid e-mail address.')
        if not errors:
 	             send_mail(
 		          request.POST['subject'],
@@ -34,8 +32,11 @@ def contact(request):
 		request.POST.get('email', 'findmyplacehelp@gmail.com'),
 		['findmyplacehelp@gmail.com'],
 	  )
-       return HttpResponseRedirect('/contact/thanks/')
+       return HttpResponseRedirect('/thanks.html')
     return render(request, 'contact.html', {'errors': errors})
+
+def thanks(request):
+    return render_to_response('thanks.html')
 
 def places(request):
     #define dictionary

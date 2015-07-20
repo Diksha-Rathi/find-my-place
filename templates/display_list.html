@@ -2,6 +2,12 @@
 {% load staticfiles %}
 {% block content %}
 	<div class="jumbotron">
+		<div class="row"><!--start row2-->
+			<div class="col-sm-2">&nbsp;</div>
+			<div class="col-sm-8"><hr><p><b>Note:</b>&nbsp;The displayed results are based on their importance. Ranking will favor prominent places within the specified area. Prominence can be affected by a place's ranking in Google's index, global popularity, and other factors.</p><hr></div>
+			<div class="col-sm-2">&nbsp;</div>
+		</div><!--end row-->
+		
 		<div class="row"><!--start row-->
 			<!--column 1 left empty-->
 			<div class="col-sm-2">&nbsp;</div>
@@ -92,11 +98,6 @@
 			<!--end column-->
 		</div><!--end row-->
 		<br>
-		<div class="row"><!--start row2-->
-			<div class="col-sm-2">&nbsp;</div>
-			<div class="col-sm-8"><hr><p><b>Note:</b>&nbsp;The displayed results are based on their importance. Ranking will favor prominent places within the specified area. Prominence can be affected by a place's ranking in Google's index, global popularity, and other factors.</p><hr></div>
-			<div class="col-sm-2">&nbsp;</div>
-		</div><!--end row-->
 	</div><!--end jumbotron-->	 
 	<br>	
 	{% for perfect_place, flag in mylist.items %}
