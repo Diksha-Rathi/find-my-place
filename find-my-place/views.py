@@ -5,7 +5,7 @@ from googleplaces import GooglePlaces, types, lang
 from django.core.mail import send_mail
 from django.http import HttpResponseRedirect
 
-YOUR_API_KEY = 'AIzaSyD3JqMSrCskCzqmhGmyxyP0Fd1MSoSGJn4'
+YOUR_API_KEY = 'A*******************************************'
 
 google_places = GooglePlaces(YOUR_API_KEY)
 

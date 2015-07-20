@@ -66,7 +66,6 @@ $ python manage.py runserver
 
 ## Todo's
 
-* Fix the Contact Us section.
 * Login system to allow users to save search results.
 
 ## Wish to contribute?

@@ -16,7 +16,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'kq3pxvgv8ojqg(&wud19xrb@aayc=-l!y3+qkxg7u%6mqvve5!'
+SECRET_KEY = '**************************************************'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -52,7 +52,6 @@ WSGI_APPLICATION = 'find-my-place.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -102,9 +101,9 @@ TEMPLATE_LOADERS = (
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'findmyplacehelp@gmail.com'
-SERVER_EMAIL = 'findmyplacehelp@gmail.com'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'findmyplacehelp@gmail.com'
-EMAIL_HOST_PASSWORD = 'physics2'
+DEFAULT_FROM_EMAIL = 'username@domain.com'
+SERVER_EMAIL = 'username@domain.com'
+EMAIL_HOST = 'smtp.domain.com'
+EMAIL_HOST_USER = 'username@domain.com'
+EMAIL_HOST_PASSWORD = '********'
 EMAIL_PORT = 587
