@@ -77,7 +77,7 @@ $ python manage.py runserver
 License
 ----
 
-MIT
+[The MIT License (MIT)](https://github.com/Diksha-Rathi/find-my-place/blob/master/LICENSE)
 
 #### Thanks for creating the following:
 
